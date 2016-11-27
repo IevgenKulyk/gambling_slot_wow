@@ -82,8 +82,5 @@ int main(int argc, char* argv[])
 	std::cout << "joker tests block ended execution" << std::endl;
 	//************************
 	//************************
-
-	//test Travis CI build
-	//
 	return 0;
 }
