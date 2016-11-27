@@ -66,7 +66,23 @@ int main(int argc, char* argv[])
 	std::cout << "matrix_process tests block finished execution" << std::endl;
 	//************************
 	//************************
+	std::cout << "joker tests block started execution" << std::endl;
+	//Test 1
+	std::cout << "Test 1 started..." << std::endl;
+	finite_automata automata;
+	joker j(automata);
+	auto test1joker = j.parse_line_for_joker(std::string("1Z111"));
+	if (test1joker != 2)
+	{
+		std::cout << "Test 1 failed" << std::endl;
+		return 1;
+	}
+	std::cout << "Test 1 passed" << std::endl;
+	//************************
+	std::cout << "joker tests block ended execution" << std::endl;
+	//************************
+	//************************
 
-	
+
 	return 0;
 }
